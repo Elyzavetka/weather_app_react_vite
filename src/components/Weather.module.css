@@ -1,0 +1,50 @@
+.cityInput input {
+  width: 100%;
+  max-width: 400px;
+  height: 40px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.cityInput button {
+  margin-left: 10px;
+  padding: 10px 15px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: #52c075;
+  color: white;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.3s ease;
+}
+
+.cityInput button:hover {
+  background-color: #46a561;
+}
+
+.cityInput input:-webkit-autofill,
+.cityInput input:-webkit-autofill:hover,
+.cityInput input:-webkit-autofill:focus {
+  background-color: #fff;
+  color: #333;
+  box-shadow: 0 0 0px 1000px #fff inset;
+}
+
+.cityInput input::placeholder {
+  color: #aaa;
+  font-style: italic;
+}
+
+.cityInput input:-moz-placeholder {
+  color: #aaa;
+  font-style: italic;
+}
+
+.cityInput input:-ms-input-placeholder {
+  color: #aaa;
+  font-style: italic;
+}

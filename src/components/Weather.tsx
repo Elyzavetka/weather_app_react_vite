@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import styles from "./Weather.module.css";
 
 interface WeatherData {
   name: string;
@@ -51,9 +52,9 @@ const Weather: React.FC = () => {
   };
 
   return (
-    <div>
+    <div className={styles.weather}>
       <h1>Check the Weather Forecast</h1>
-      <div>
+      <div className={styles.cityInput}>
         <input
           type="text"
           placeholder="Enter a city"
@@ -65,10 +66,10 @@ const Weather: React.FC = () => {
 
       {loading && <p>Loading...</p>}
 
-      {error && <p>{error}</p>}
+      {error && <p className={styles.error}>{error}</p>}
 
       {weatherData && (
-        <div>
+        <div className={styles.weatherData}>
           <h2>{weatherData.name}</h2>
           <p>Temperature: {weatherData.main.temp}°C</p>
           <p>Description: {weatherData.weather[0].description}</p>
