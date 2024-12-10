@@ -13,6 +13,7 @@ Clone the repository to your local machine:
 ```bash
 git clone https://github.com/Elyzavetka/weather_app_react_vite
 cd weather_app_react_vite
+```
 
 ### 2. Install dependencies
 
@@ -20,6 +21,7 @@ To install all the necessary dependencies, run the following command:
 
 ```bash
 npm install
+```
 
 ### 3. Set up environment variables
 
@@ -27,6 +29,7 @@ The app requires an API key to access the OpenWeatherMap API. Create a `.env` fi
 
 ```makefile
 VITE_API_KEY=your-openweathermap-api-key
+```
 
 ### 4. Run the development server
 
@@ -34,6 +37,7 @@ To start the development server run:
 
 ```bash
 npm run dev
+```
 
 Visit http://localhost:5173 in your browser to view the app.
 
