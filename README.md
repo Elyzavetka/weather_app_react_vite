@@ -1,50 +1,39 @@
-# React + TypeScript + Vite
+# Weather App with React, TypeScript, and Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a simple weather forecast application built with React, TypeScript, and Vite. The app allows users to search for the weather in different cities using the OpenWeatherMap API.
 
-Currently, two official plugins are available:
+## Project Setup
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+To run the project locally, follow the steps below:
 
-## Expanding the ESLint configuration
+### 1. Clone the repository
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Clone the repository to your local machine:
 
-- Configure the top-level `parserOptions` property like this:
+```bash
+git clone https://github.com/Elyzavetka/weather_app_react_vite
+cd weather_app_react_vite
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+### 2. Install dependencies
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+To install all the necessary dependencies, run the following command:
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+```bash
+npm install
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+### 3. Set up environment variables
+
+The app requires an API key to access the OpenWeatherMap API. Create a `.env` file in the root directory and add the following line with your API key:
+
+```makefile
+VITE_API_KEY=your-openweathermap-api-key
+
+### 4. Run the development server
+
+To start the development server run:
+
+```bash
+npm run dev
+
+Visit http://localhost:5173 in your browser to view the app.
+
